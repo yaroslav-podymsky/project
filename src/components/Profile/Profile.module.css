@@ -1,6 +1,12 @@
 
-.content img {
+.content  {
   width: 1400px;
   height: 200px;
 }
+
+img {
+  width: 1325px;
+  height: 200px;
+}
+
 
