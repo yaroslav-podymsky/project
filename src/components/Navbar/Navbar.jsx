@@ -7,8 +7,8 @@ const Navbar = () => {
     <div className={`${s.item} ${s.active}`}> <NavLink to="/profile" activeClassName={s.active}>Profile</NavLink></div>
     <div className={`${s.item} ${s.active}`}> <NavLink to="/dialogs" activeClassName={s.active}>Messages</NavLink></div>
     <div className={`${s.item} ${s.active}`}> <NavLink to="/news" activeClassName={s.active}>News</NavLink></div>
-    <div className={`${s.item} ${s.active}`}> <a>Music</a></div>
-    <div className={`${s.item} ${s.active}`}> <a>Settings</a></div>
+    <div className={`${s.item} ${s.active}`}> <NavLink to="/musik" activeClassName={s.active}>Music</NavLink></div>
+    <div className={`${s.item} ${s.active}`}> <NavLink to="/setting" activeClassName={s.active}>Settings</NavLink></div>
   </nav>
 }
 
