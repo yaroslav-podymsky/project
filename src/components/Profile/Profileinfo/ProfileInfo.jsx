@@ -6,7 +6,7 @@ const ProfileInfo = () => {
   return (
     <div>
       <div>
-        <img src='https://www.publicdomainpictures.net/pictures/210000/velka/floral-pattern-background-681.jpg' />
+        <img src='https://www.cliparthut.com/images/149/nklOX.png' />
       </div>
       <div className={s.descriptionBblock}>ava+description</div>
     </div>

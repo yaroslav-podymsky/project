@@ -1,12 +1,13 @@
 .header{
     grid-area: h;
-    background-color: rgba(40, 226, 15, 0.931);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
+    border: 5px chartreuse solid;
     }
 
     
     .header img {
-        width: 200px;
-        height: 140px;
+        width: 150px;
+        height: 130px;
     }
