@@ -4,12 +4,20 @@
 }
 
 .dialogsItems {
-    padding: 20px;
-    color: rgb(7, 5, 139);
+font-family:Snell Roundhand, cursive;
+text-decoration: none;
+font-size: 40px;
+line-height: 50px;
+padding: 20px;
+color: rgb(7, 5, 139);
 }
 
 .dialogsItems .active {
     color: white;
+}
+
+.dialogsItems:hover {
+    color: seagreen;
 }
 
 .messages {

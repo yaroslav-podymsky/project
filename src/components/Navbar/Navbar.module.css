@@ -5,13 +5,21 @@
   border-radius: 10px;
   height: 800px;
   border: 5px chartreuse solid;
+  background-image: url();
 }
 
 .item a {
-color: rgb(7, 5, 139);
+  color:rgb(54, 42, 221);
 text-decoration: none;
+font-size: 40px;
+line-height: 50px;
+
+text-transform: lowercase;
+font-family:Snell Roundhand, cursive;
+font-weight: 900
 }
 
 .item a.active {
-  color:rgb(255, 0, 0);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 .1em rgb(183, 200, 29);
+  color:rgb(7, 5, 139);
   }
