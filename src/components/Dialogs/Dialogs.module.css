@@ -4,8 +4,8 @@
 }
 
 .dialogsItems {
-font-family:Snell Roundhand, cursive;
 text-decoration: none;
+font-family:monospace;
 font-size: 40px;
 line-height: 50px;
 padding: 20px;

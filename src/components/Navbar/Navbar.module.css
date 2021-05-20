@@ -2,24 +2,56 @@
   grid-area: n;
   background-color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 3px;
   height: 800px;
-  border: 5px chartreuse solid;
-  background-image: url();
+  border: 4px rgb(0, 0, 0) solid;
+  text-align: center;
+  background-color: rgb(229, 241, 207);
+
 }
 
 .item a {
-  color:rgb(54, 42, 221);
+color:rgb(54, 42, 221);
 text-decoration: none;
 font-size: 40px;
 line-height: 50px;
-
-text-transform: lowercase;
-font-family:Snell Roundhand, cursive;
-font-weight: 900
+text-transform:uppercase;
+font-family:FreeMono, monospace;
+font-weight: 900;
 }
 
 .item a.active {
-  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 .1em rgb(183, 200, 29);
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 .1em rgb(0, 0, 0);
   color:rgb(7, 5, 139);
+}
+
+.animation1 {
+  animation: animation1 3s alternate linear infinite;
+}
+
+.animation2 {
+  animation: animation2 3s alternate linear infinite;
+}
+
+@keyframes animation1 {
+  0% {
+    transform:translateX(0);
   }
+  50% {
+    transform:translateX(-3px);
+  }
+  100% {
+    transform:translateX(0px);
+  }}
+
+  @keyframes animation2 {
+    0% {
+      transform:translateX(0px);
+    }
+    50% {
+      transform:translateX(3px);
+    }
+    100% {
+      transform:translateX(0px);
+    }}
+  

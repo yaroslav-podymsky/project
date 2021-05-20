@@ -6,7 +6,7 @@ const ProfileInfo = () => {
   return (
     <div>
       <div>
-        <img src='https://www.cliparthut.com/images/149/nklOX.png' />
+        <img src='https://drevgrad74.ru/wp-content/uploads/2020/10/kredit1.jpg' />
       </div>
       <div className={s.descriptionBblock}>ava+description</div>
     </div>

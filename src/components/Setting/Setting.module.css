@@ -1,7 +1,13 @@
 
-
+.list {
+  text-decoration: none;
+}
 .item {
-  
-  color: white;
+text-decoration: none;
+font-family:monospace;
+font-size: 40px;
+line-height: 50px;
+padding: 20px;
+color: rgb(7, 5, 139);
 }
 

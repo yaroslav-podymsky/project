@@ -1,8 +1,7 @@
-.list {
-  border: 1 px crimson solid;
-}
+
 
 .item {
+  text-decoration: none;
   background-color: blue;
   color: white;
 }
