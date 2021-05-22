@@ -52,9 +52,6 @@ let store = {
     this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
     this._state.sidebarPage = sidebarReducer(this._state.sidebarrPage, action);
     this._callSubscriber(this._state);
-
-    
-   
   }
 }
 export const addPostActionCreator = (type) => ({ type: 'ADD-POST' });
