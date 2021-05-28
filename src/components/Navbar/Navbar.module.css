@@ -23,7 +23,17 @@ font-weight: 900;
 .item a.active {
   text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 .1em rgb(0, 0, 0);
   color:rgb(7, 5, 139);
+} 
+.item a:hover {
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 .1em rgb(0, 0, 0);
+  color:rgb(54, 42, 221);
 }
+
+
+
+
+
+
 
 .animation1 {
   animation: animation1 3s alternate linear infinite;

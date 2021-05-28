@@ -5,9 +5,9 @@
 .item {
 text-decoration: none;
 font-family:monospace;
-font-size: 40px;
+font-size: 30px;
 line-height: 50px;
-padding: 20px;
 color: rgb(7, 5, 139);
+list-style: none;
 }
 

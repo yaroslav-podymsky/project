@@ -3,12 +3,14 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.dialogsItems {
+.dialogsItems a {
 text-decoration: none;
 font-family:monospace;
 font-size: 40px;
-line-height: 50px;
-padding: 20px;
+line-height: 60px;
+padding-top: 10px;
+padding-left: 20px;
+
 color: rgb(7, 5, 139);
 }
 
