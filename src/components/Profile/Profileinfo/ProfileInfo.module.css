@@ -2,3 +2,12 @@
 .descriptionBblock {
   padding: 20px;
 }
+
+.Avatar {
+  width: auto;
+  height: auto;
+}
+
+.topImg {
+  border-radius: 15px;
+}

@@ -1,16 +1,24 @@
 .header{
     grid-area: h;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 10px;
-    border: 4px rgb(0, 0, 0) solid;
+    border: 6px rgb(21, 180, 0) solid;
     }
     .header img {
-        width: 150px;
-        height: 130px;
+        width: 130px;
+        height: 120px;
     }
     .image {
         width: 1572px;
         height: 122px;
-        background: url('http://4.bp.blogspot.com/-zPIetIdlxhM/WKbfEpWJJkI/AAAAAAAATXo/mThItnppPMAy95wK9aspY1gWpju-vQQXwCK4B/s1600/Google_Analytics_Solutions_Lockup_color.png')  no-repeat;
-        background-color: rgb(229, 241, 207);
+        /* background: url('http://4.bp.blogspot.com/-zPIetIdlxhM/WKbfEpWJJkI/AAAAAAAATXo/mThItnppPMAy95wK9aspY1gWpju-vQQXwCK4B/s1600/Google_Analytics_Solutions_Lockup_color.png')  no-repeat; */
+        background-color: rgb(255, 255, 255);
+    }
+
+    .loginBlock {
+        float: right;
+    }
+
+    .loginBlock a {
+        color: black;
     }
