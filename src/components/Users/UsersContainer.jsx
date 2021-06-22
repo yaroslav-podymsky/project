@@ -9,7 +9,11 @@ class UsersContainer extends React.Component {
 
     componentDidMount() {
         this.props.toggleIsFetching(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users/?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`,
+       {
+            withCredentials: true
+       })
+
             .then(responce => {
                 this.props.toggleIsFetching(false)
                 this.props.setUsers(responce.data.items);
@@ -20,7 +24,10 @@ class UsersContainer extends React.Component {
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         this.props.toggleIsFetching(true);
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users/?page= ${pageNumber} &count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`,
+        {
+            withCredentials: true
+        })
             .then(responce => {
                 this.props.toggleIsFetching(false);
                 this.props.setUsers(responce.data.items);
@@ -55,29 +62,8 @@ let mapStateToProps = (state) => {
     }
 }
 
-// let mapDispatchToProps = (dispatch) => {
-//     return {
-//         follow: (userId) => {
-//             dispatch(followAC(userId));
-//         },
-//         unfollow: (userId) => {
-//             dispatch(unfollowAC(userId));
-//         },
-//         setUsers: (users) => {
-//             dispatch(setUsersAC(users));
-//         },
-//         setCurrentPage: (pageNumber) => {
-//             dispatch(setCurrentPageAC(pageNumber));
-//         },
-//         setTotalUsersCount: (totalCount) => {
-//             dispatch(setUsersTotalCountAC(totalCount));
-//         },
-//         toggleIsFetching: (isFetching) => {
-//             dispatch(toggleIsFetchingAC(isFetching));
-//         }
-//     }
-// }
+// ?page=${this.props.currentPage}&count=${this.props.pageSize}
 
-export default connect(mapStateToProps,
+export default connect (mapStateToProps,
     { follow, unfollow, setUsers, setCurrentPage, setTotalUsersCount, toggleIsFetching}
     ) (UsersContainer);
