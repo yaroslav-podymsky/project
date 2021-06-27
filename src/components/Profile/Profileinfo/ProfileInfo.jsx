@@ -1,6 +1,7 @@
 import React from 'react';
 import Preloader from '../../common/preloader/preloader';
 import s from './ProfileInfo.module.css';
+import ProfileStatus from './ProfileStatus';
 
 
 
@@ -12,12 +13,13 @@ if (!props.profile) {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <img className={s.topImg} src='https://cebo-style.ru/upload/iblock/55e/55ec4e1e238b980de64647032aac60f6.jpg' />
-      </div>
+      </div> */}
       <div className={s.descriptionBblock}>
         <img className={s.Avatar} src={props.profile.photos.large} />
-        ava+description</div>
+        <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+        </div>  
     </div>
   )
 }

@@ -1,8 +1,9 @@
-import { usersAPI } from "../API/API";
+import { profileAPI, usersAPI } from "../API/API";
 
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
+const SET_STATUS = 'SET_STATUS';
 
 
 let initialState = {
@@ -12,7 +13,8 @@ let initialState = {
         { id: 3, message: 'yo yo yo ', likesCount: '32' }
     ],
     newPostText: 'text',
-    profile: null
+    profile: null,
+    status:  ""
 };
 
 
@@ -36,6 +38,13 @@ const profileReducer = (state = initialState, action) => {
                 newPostText: action.newText
             }
         }
+        case SET_STATUS: {
+            return {
+                ...state,
+                status: action.status
+            }
+        }
+
         case SET_USER_PROFILE: {
             return {...state, profile: action.profile}
         }
@@ -45,14 +54,26 @@ const profileReducer = (state = initialState, action) => {
 }
 
 
-export const addPostActionCreator = () => ({type: ADD_POST})
-export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
+export const addPostActionCreator = () => ({type: ADD_POST});
+export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
+export const setStatus = (status) => ({type: SET_STATUS, status});
+
+
 export const getUserProfile = (userId) => (dispatch) => {
-    usersAPI.getProfile(userId)
-    .then(responce => {
-      dispatch(setUserProfile(responce.data));
-    });
+usersAPI.getProfile(userId).then(responce => {dispatch(setUserProfile(responce.data));});
 }
+
+export const getStatus = (userId) => (dispatch) => {
+    profileAPI.getStatus(userId).then(responce => {dispatch(setStatus(responce.data));});
+}
+
+export const updateStatus = (status) => (dispatch) => {
+    profileAPI.updateStatus(status).then(responce => {
+            if (responce.data.resultCode === 0 ) {
+        dispatch(setStatus(status));}});
+}
+
+
 export const updateNewPostTextActionCreator = (text) =>
 ({type: UPDATE_NEW_POST_TEXT, newText: text })
 
