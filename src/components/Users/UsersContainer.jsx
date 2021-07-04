@@ -10,7 +10,7 @@ import {
 import Users from './Users';
 import Preloader from '../common/preloader/preloader';
 import { compose } from 'redux';
-import { requestUsers, getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount } from '../../redux/users-selectors';
+import { getCurrentPage, getFollowingInProgress, getIsFetching, getPageSize, getTotalUsersCount, requestUsers } from '../../redux/users-selectors';
 
 
 
