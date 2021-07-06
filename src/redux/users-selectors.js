@@ -1,21 +1,12 @@
 import { createSelector } from "reselect";
 
 
-
-
 const requestUsersSelector = (state) => {
     return state.usersPage.users;
 };
 export const requestUsers = createSelector(requestUsersSelector, (users) => {
     return users.filter(u => true);
 });
-
-
-
-
-
-
-
 export const getPageSize = (state) => {
     return state.usersPage.pageSize;
 };

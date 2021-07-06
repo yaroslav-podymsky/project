@@ -18,6 +18,7 @@ import { compose } from 'redux';
 import Preloader from './components/common/preloader/preloader';
 
 
+
 class App extends Component  {
   componentDidMount() {
     this.props.initializeApp();

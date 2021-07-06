@@ -1,8 +1,7 @@
-.userPhoto {
-    width: 100px;
-    height: 100px;
-}
 
+.selectedPage {
+    font-weight: bold;
+}
 
 
 .pageNumber {
@@ -11,3 +10,4 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+

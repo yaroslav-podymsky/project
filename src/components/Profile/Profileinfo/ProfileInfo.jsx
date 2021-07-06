@@ -7,8 +7,8 @@ import ProfileStatusWithHooks from './ProfileStatusWithHooks';
 
 
 
-const ProfileInfo = (props) => {
-if (!props.profile) {
+const ProfileInfo = ({profile, status, updateStatus}) => {
+if (!profile) {
   return <Preloader />
 }
 
@@ -18,8 +18,8 @@ if (!props.profile) {
         <img className={s.topImg} src='https://cebo-style.ru/upload/iblock/55e/55ec4e1e238b980de64647032aac60f6.jpg' />
       </div>
       <div className={s.descriptionBblock}>
-        <img className={s.Avatar} src={props.profile.photos.large} />
-        <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
+        <img className={s.Avatar} src={profile.photos.large} />
+        <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
         </div>  
     </div>
   )
