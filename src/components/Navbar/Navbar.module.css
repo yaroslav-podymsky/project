@@ -20,7 +20,7 @@ font-family:FreeMono, monospace;
 font-weight: 900;
 }
 
-.item a.active {
+.item a:active {
   text-shadow: 1px 1px 2px rgb(67, 199, 6), 0 0 .1em rgb(0, 0, 0);
   color:rgba(220, 255, 23, 0.678);
 } 
