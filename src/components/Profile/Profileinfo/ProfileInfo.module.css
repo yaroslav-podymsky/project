@@ -11,3 +11,10 @@
 .topImg {
   border-radius: 15px;
 }
+
+
+.mainPhoto {
+  border: 5px  rgb(21, 180, 0)   solid;
+  border-radius: 100px;
+  max-width: 200px;
+}
