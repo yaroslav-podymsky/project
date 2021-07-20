@@ -41,16 +41,10 @@ class App extends Component {
         <HeaderContainer />
         <Navbar />
         <div className='app-wrapper-content'>
-
           <Route exact path='/dialogs'
             render={withSuspense(DialogsContainer)} />
-
-
           <Route path='/profile/:userId?'
             render={withSuspense(ProfileContainer)} />
-
-
-
           <Route path='/users'
             render={() => <UsersContainer />} />
           <Route path='/login'

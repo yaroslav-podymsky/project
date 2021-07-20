@@ -1,0 +1,10 @@
+.preloader {
+ max-width: 200px;
+ max-height: 200px;
+}
+
+
+.preloaderContainer {
+    display: flex;
+    justify-content: center;
+}

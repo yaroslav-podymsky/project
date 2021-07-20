@@ -85,6 +85,16 @@ export default ProfileInfo;
 
 
 
+
+
+
+
+
+
+
+
+
+
 {/* <div>
         <img className={s.topImg} src='https://cebo-style.ru/upload/iblock/55e/55ec4e1e238b980de64647032aac60f6.jpg' />
       </div> */}

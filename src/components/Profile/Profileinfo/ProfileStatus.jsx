@@ -4,7 +4,7 @@ import s from './ProfileInfo.module.css';
 
 
 
-class ProfileStatus extends React.Component {
+class ProfileStatus extends React.Component {   
 
 
 
